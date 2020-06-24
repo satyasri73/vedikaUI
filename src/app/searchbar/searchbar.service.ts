@@ -15,11 +15,11 @@ export class SearchbarService {
   constructor(private http: HttpClient) { }
   getAllFunctionHalls():Observable<any>
   {
-    return this.http.get('http://localhost:8057/api/functionhallslist');
+    return this.http.get('http://52.66.240.14:8057/api/functionhallslist');
   }
   getFunctionhallByCity(cityname):Observable<any>
   {
-    return this.http.get('http://localhost:8057/api/functionhallsfindbycity/?city='+cityname);
+    return this.http.get('http://52.66.240.14:8057/api/functionhallsfindbycity/?city='+cityname);
   }
 }
 
